@@ -1,0 +1,28 @@
+ByteDance
+Software Engineer Intern
+Beijing, China 
+Jul 2024 - Sep 2024
+
+• Led the development of the server-side pipeline for Lark’s AI-powered spreadsheet formula generation, utilizing Golang. Responsibilities included integrating LLM services for generating Excel-like formulas, implementing rate limiting, retrieving data from the RAG database, and managing user feedback collection.
+• Optimized token usage in AI-generated formulas by applying the Smith-Waterman algorithm to extract relevant fields from large datasets, reducing context to 32k tokens for efficient query handling.
+• Collaborated with the algorithm team to expand the formula generation evaluation dataset from 100 to 400 entries using Python, and automated model evaluation through Prompt Engineering.
+• Achieved 25% feature usage rate within three weeks of full launch, with a 70% formula adoption rate, and a 25% reduction in formula-related customer service queries.
+
+Momenta
+Software Engineer Intern
+Beijing, China 
+Mar 2024 - Jun 2024
+
+• Refactored the ROS Adaptor module using C++, restructuring the communication link with a proxy pattern, reducing the number of TCP connections from dozens to one, cutting network load by 60%.
+• Migrated ROS topic configuration to a cloud-based distribution system, replacing manual configuration updates with automated updates at minute-level granularity, improving operational efficiency.
+• Developed the backend for the Record Monitor using Python and Flask, enabling real-time data recording requests from the vehicle console to be forwarded to data acquisition machines.
+• Built a documentation management platform using Docusaurus, and developed an internal LLM chatbot with the Langchain framework, reducing ticketed issues by 50%.
+
+DpTech
+Software Engineer Intern
+Hangzhou, China 
+Jul 2023 - Sep 2023
+• Developed core components of the Conplat system using C++, a critical solution for Linux-based firewall products.
+• Enhanced system stability by resolving memory usage issues identified via static code analysis, improving the overall performance of the firewall.
+• Designed and implemented an automated script with Python and Shell to extract, analyze, and filter problematic files, reducing false positives in Bugzilla error reports and accelerating the debugging process.
+• Resolved over 50 memory leak issues and filtered 300+ false positives, significantly improving system reliability and integrating the debugging script as a standardized tool for corporate use.

@@ -1,0 +1,16 @@
+AI Bot zone
+Backend Develop
+https://github.com/ajr666/AI-Bot-Zone
+
+• Engineered the back-end infrastructure for an AI battle platform utilizing Java and SpringBoot, facilitating user engagement through the upload and competition of AI code in the Gluttonous Snake game.
+• Architected and executed a scalable back-end system, comprising a user-matching microservice, bot code execution microservice, and established real-time game session communication via WebSocket.
+• Utilized JOOR to dynamically compile and run AI scripts, expanded language support for AI code using Docker, crafted message queue to streamline AI execution, improving system efficiency with multithreading.
+• Implemented functionality allowing users to upload bots written in Java, matching them with opponents of comparable skill levels, and provided comprehensive game replays to aid in bot development and debugging.
+
+
+Pascal-Compiler
+Backend Develop
+https://github.com/ajr666/Pascal-Compiler
+• Developed syntax and semantic analysis modules in C++, utilizing the QT framework to craft a user-friendly interface and to visualize the abstract syntax tree (AST) for enhanced user interaction.
+• Proposed “compensate for errors and continue analyzing correct characters” method in LL1 to enable the compiler to detect more compilation errors after implementing two approaches for syntax analysis (LL1 and recursive descent).
+• Delivered a compiler supporting 104 context-free grammars in the Pascal, capable of compiling code segments, output token sequences, ASTs, symbol tables, or identifying nearly 100% compilation errors, improving user trust.

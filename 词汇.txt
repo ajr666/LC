@@ -1,0 +1,4 @@
+lexicographically 按字典序
+palindromic 回文的
+monotonous stack 单调栈
+vowel 元音
