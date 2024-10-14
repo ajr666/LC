@@ -1,5 +1,5 @@
 ## 字符可以比较大小
-print('a' > 'c')  # 输出: False
+'a' > 'c'  # False
 print('a' < 'c')  # 输出: True
 print('a' == 'a') # 输出: True
 
