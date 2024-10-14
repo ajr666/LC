@@ -34,7 +34,7 @@ print(build_and_check(operations))  # 输出: "000"
 
 
 
-# Sorted实现
+# SortedList实现
 from sortedcontainers import SortedList
 def build_and_check(operations):
     obstacles = SortedList()  # 用来存储障碍物的位置

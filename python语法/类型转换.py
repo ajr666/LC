@@ -16,5 +16,3 @@ print(c)
 ## int 转 list
 num = 123
 a = [int(d) for d in str(num)] 
-
-num_s = str(num)
