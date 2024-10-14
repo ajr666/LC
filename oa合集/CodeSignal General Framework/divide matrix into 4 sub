@@ -1,0 +1,58 @@
+from typing import List
+import math
+
+def calculate_average(matrix: List[List[int]], r1: int, r2: int, c1: int, c2: int) -> int:
+    """
+    Calculate the average value of the sub-matrix defined by (r1, r2, c1, c2).
+    """
+    total_sum = 0
+    count = 0
+    for i in range(r1, r2 + 1):
+        for j in range(c1, c2 + 1):
+            if matrix[i][j] >= 0:
+                total_sum += matrix[i][j]
+                count += 1
+    
+    if count == 0:
+        return 0
+    return total_sum // count
+
+def solution(matrix: List[List[int]]) -> List[int]:
+    rows = len(matrix)
+    cols = len(matrix[0])
+    min_diff = math.inf
+    best_res_row, best_res_col = 0, 0
+    
+    # Iterate through all possible positions to divide the matrix
+    for res_row in range(rows - 1):
+        for res_col in range(cols - 1):
+            # Calculate the average values for the four sub-matrices
+            avg1 = calculate_average(matrix, 0, res_row, 0, res_col)
+            avg2 = calculate_average(matrix, 0, res_row, res_col + 1, cols - 1)
+            avg3 = calculate_average(matrix, res_row + 1, rows - 1, 0, res_col)
+            avg4 = calculate_average(matrix, res_row + 1, rows - 1, res_col + 1, cols - 1)
+            
+            # Find the max and min average values
+            max_avg = max(avg1, avg2, avg3, avg4)
+            min_avg = min(avg1, avg2, avg3, avg4)
+            
+            # Calculate the difference between max and min average values
+            diff = max_avg - min_avg
+            
+            # Update the minimum difference and corresponding row and column if found
+            if diff < min_diff:
+                min_diff = diff
+                best_res_row = res_row
+                best_res_col = res_col
+    
+    return [best_res_row, best_res_col]
+
+# Example usage
+matrix = [
+    [3, 1, 4, 2],
+    [2, 5, 7, 6],
+    [8, 4, 3, 9],
+    [5, 6, 2, 7]
+]
+
+print(solution(matrix))  # 输出：[1, 2]

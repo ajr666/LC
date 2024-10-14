@@ -7,18 +7,29 @@ if st: # 非空为true
     st[-1] = 5 # 栈顶
 
 
-## 队列
+## 队列 (双端队列)
 from collections import deque
 
-queue = deque()
-queue.append(10) # 入队（在队尾添加元素）
-queue.append(20)
-queue.append(30)
+que = deque()
+que = deque([3, 4, 5])
 
-first_item = queue.popleft()  # 返回 10
-print(first_item)  # 输出：10
+que.append(10) # 入队(在队尾添加元素)
+que.append(20)
 
-print(queue)  # 输出：deque([20, 30])
+que.appendleft(50) # 入队(在队头添加元素)
+
+first_item = que.popleft()  # 返回 10
+last_item = que.pop() # 移除并返回 deque 右端的元素。
+
+print(que)
+
+print(que[0])  # deque的元素也可以使用索引访问、修改，但时间复杂度是O(n)
+print(que[2])  
+que[2] = 1000
+print(que[2])
+print(que[-1])
+print(que)
+print(len(que))
 
 
 # 堆

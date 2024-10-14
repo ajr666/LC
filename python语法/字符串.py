@@ -47,5 +47,6 @@ print("123".isdigit())  # 输出: True
 
 # 翻转字符串
 s = s[:: -1]
+print(s)
 
 
