@@ -31,7 +31,8 @@ print(s.find("World"))  # 输出: 7
 print(s.replace("World", "Python"))  # 输出: "Hello, Python!"
 
 # 分割和连接
-print(s.split(", "))  # 按逗号分隔 输出: ['Hello', 'World!']
+sl = s.split(", ")  # 按逗号分隔 输出: ['Hello', 'World!']
+print(sl)
 print(" ".join(['Hello', 'Python']))  # 按空格连接list 输出: "Hello Python"
 
 # 大小写转换

@@ -1,3 +1,41 @@
+## 恺
+def solution(queries):
+    length_map = {}
+    max_value = 0
+    res = []
+
+    for query in queries:
+        if query in length_map:
+            continue  # 跳过已存在的位置
+
+        # 获取左边和右边的区间长度（如果存在）
+        left_length = length_map.get(query - 1, 0)
+        right_length = length_map.get(query + 1, 0)
+
+        # 计算当前区间的总长度
+        current_length = left_length + right_length + 1
+
+        # 更新当前位置和区间边界的长度
+        length_map[query] = current_length
+        length_map[query - left_length] = current_length
+        length_map[query + right_length] = current_length
+
+        # 更新最长连续区间长度
+        max_value = max(max_value, current_length)
+
+        # 将当前最大值加入结果
+        res.append(max_value)
+
+    return res
+
+# 示例用法
+queries = [2, 1, 3]
+print(solution(queries))  # 输出: [1, 2, 3]
+
+
+
+
+
 import heapq
 
 def solution(queries):
@@ -122,3 +160,5 @@ def solution(queries):
         result.append(max_len)
     
     return result
+
+
